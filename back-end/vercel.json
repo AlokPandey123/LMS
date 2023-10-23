@@ -6,7 +6,7 @@
       { "src": "/app.js", "use": "@vercel/node" }
    ],
    "scripts": {
-    "start": "node app.js" // Specify the command to start your app
+    "start": "node app.js" 
   },
    "routes": [
       { "src": "/(.*)", "dest": "app.js" }
