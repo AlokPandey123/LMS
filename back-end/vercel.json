@@ -1,10 +1,15 @@
 {
-   "version": 2,
-   "name": "music-album",
+   "version": 1,
+   "name": "coursify-back-end",
+   "main": "server.js",
    "builds": [
-      { "src": "/", "use": "@vercel/node" }
+      { "src": "/app.js", "use": "@vercel/node" }
    ],
+   "scripts": {
+    "start": "node app.js" // Specify the command to start your app
+  },
    "routes": [
       { "src": "/(.*)", "dest": "app.js" }
-   ]
+   ],
+   
 }
